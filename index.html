@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Die VIP Nichts-Box</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111111;
+      color: white;
+      font-family: sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #FFD140;
+      font-weight: 800;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    h2, h3 {
+      color: #FFD140;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 1rem auto;
+    }
+
+    .paypal-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .pp-MLU3K7MYV6JJA {
+      text-align: center;
+      border: none;
+      border-radius: 0.25rem;
+      min-width: 11.625rem;
+      padding: 0 2rem;
+      height: 2.625rem;
+      font-weight: bold;
+      background-color: #FFD140;
+      color: #000000;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      cursor: pointer;
+    }
+
+    .manifest-btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border: 2px solid #FFD140;
+      background: rgba(255, 209, 64, 0.1);
+      color: #FFD140;
+      font-weight: bold;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+
+    .manifest-text {
+      font-style: italic;
+      margin-top: 2rem;
+      color: #aaa;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    footer a {
+      color: #FFD140;
+      text-decoration: underline;
+    }
+
+    #impressum {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #333;
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Die VIP Nichts-Box</h1>
+  <p>
+    Der wahre Luxus? <strong style="color: white;">NICHTS</strong> – edel verpackt für jene, die alles besitzen.
+  </p>
+
+  <h2>Was ist die VIP Nichts-Box?</h2>
+  <p>
+    In einer Welt voller Überfluss ist <strong style="color: #FFD140;">NICHTS</strong> der wahre Reichtum.<br />
+    Diese Box ist leer – und genau das macht sie <em>unbezahlbar</em>.<br />
+    Für <strong style="color: white;">2000 €</strong> erhältst du eine signierte Luxusbox mit dem <u>Zertifikat des Nichts</u>.<br /><br />
+    <span style="color: #FFD140;">Kunst. Status. Stille. Ein Symbol für das, was sich Geld nicht kaufen kann – außer hier.</span>
+  </p>
+
+  <div class="paypal-wrapper">
+    <form action="https://www.paypal.com/ncp/payment/MLU3K7MYV6JJA" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+      <input class="pp-MLU3K7MYV6JJA" type="submit" value="Jetzt kaufen" />
+      <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+      <section>
+        Abgewickelt durch 
+        <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;" />
+      </section>
+    </form>
+  </div>
+
+  <h3>🌀 Das Manifest des Nichts</h3>
+  <button class="manifest-btn" onclick="toggleManifest()">📜 Manifest lesen</button>
+  <p id="manifest" class="manifest-text" style="display: none;">
+    "Du hältst <span style='color: #FFD140;'>nichts</span> in den Händen. Und doch alles. Denn in der Leere liegt Wahrheit.<br />
+    Die VIP Nichts-Box ist kein Produkt – sie ist ein Spiegel deiner Freiheit."
+  </p>
+
+  <footer>
+    © 2025 Die Nichts-Box – Für VIPs, die alles haben. Nichts ist exklusiver.<br />
+    <a href="#impressum">Impressum</a>
+  </footer>
+
+  <section id="impressum">
+    <h4 style="color: #FFD140;">Impressum</h4>
+    <p>Siyar Wulf<br />
+    Stadtweide 27<br />
+    23562 Lübeck<br />
+    Deutschland</p>
+    <p>E-Mail: <a href="mailto:siyarwulf@gmail.com">siyarwulf@gmail.com</a><br />
+    Telefon: <a href="tel:+4917647154638">+49 176 471 546 38</a></p>
+  </section>
+
+  <script>
+    function toggleManifest() {
+      const m = document.getElementById("manifest");
+      m.style.display = m.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
